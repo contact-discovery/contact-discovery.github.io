@@ -1,0 +1,13 @@
+---
+title: Mobile Private Contact Discovery
+---
+
+Mobile messengers like WhatsApp perform contact discovery by uploading the user's entire address book to the service provider. This allows the service provider to determine which of the user’s contacts are registered to the messaging service. However, such a procedure poses significant privacy risks and legal challenges. As we find, even messengers with privacy in mind currently do not deploy proper mechanisms to perform contact discovery privately.
+
+The most promising approaches addressing this problem revolve around private set intersection (PSI) protocols. Unfortunately, even in a weak security model where clients are assumed to follow the protocol honestly, previous protocols and implementations turned out to be far from practical when used at scale. This is due to their high computation and/or communication complexity as well as lacking optimization for mobile devices. In our work, we remove most obstacles for large-scale global deployment by significantly improving two promising protocols by Kiss et al. (PoPETS'17) while also allowing for malicious clients.
+
+Concretely, we present novel precomputation techniques for correlated oblivious transfers (reducing the online communication by factor 2x), Cuckoo filter compression (with a compression ratio of ~70%), as well as 4.3x smaller Cuckoo filter updates. In a protocol performing oblivious PRF evaluations via garbled circuits, we replace AES as the evaluated PRF with a variant of LowMC (Albrecht et al., EUROCRYPT'15) for which we determine optimal parameters, thereby reducing the communication by factor 8.2x. Furthermore, we implement both protocols with security against malicious clients in C/C++ and utilize the ARM Cryptography Extensions available in most recent smartphones. Compared to previous smartphone implementations, this yields a performance improvement of factor 1000x for circuit evaluations. The online phase of our fastest protocol takes only 2.92s measured on a real WiFi connection (6.53s on LTE) to check 1024 client contacts against a large-scale database with >268M entries.
+
+Publications
+------------
+ * _Mobile Private Contact Discovery at Scale_ by Daniel Kales ([TU Graz](https://www.iaik.tugraz.at/)), Christian Rechberger ([TU Graz](https://www.iaik.tugraz.at/)), Matthias Senker ([TU Darmstadt](https://www.encrypto.de/)), Thomas Schneider ([TU Darmstadt](https://www.encrypto.de/)), and Christian Weinert ([TU Darmstadt](https://www.encrypto.de/)) in [28. USENIX Security Symposium (USENIX Security'19)](https://www.usenix.org/conference/usenixsecurity19). Paper available [here](https://github.com/contact-discovery/Publications/raw/master/PDFs/KRSSW19.pdf).
