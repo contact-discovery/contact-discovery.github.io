@@ -4,7 +4,7 @@ Mobile contact discovery allows users of mobile messengers to conveniently conne
 
 Some of the world's most popular mobile messengers (with billions of users) like [WhatsApp](https://www.whatsapp.com/) perform contact discovery by [regularly uploading and storing the users' entire address books](https://www.whatsapp.com/legal/#terms-of-service), while more privacy-concerned messengers like [Signal](https://signal.org/) transfer only [short hashes of phone numbers](https://support.signal.org/hc/en-us/articles/360007061452-Does-Signal-send-my-number-to-my-contacts-) or rely on [trusted hardware](https://signal.org/blog/private-contact-discovery/). Unfortunately, the low entropy of phone numbers indicates that it is feasible to reverse such hash values and therefore, albeit all good intentions, [there is no gain in privacy](https://doi.org/10.18420/sicherheit2018_04).
 
-In a research collaboration between [TU Darmstadt](https://encrypto.de), [TU Graz](https://www.iaik.tugraz.at/), and [University of Würzburg](https://se.informatik.uni-wuerzburg.de/secure-software-systems-group/secure-software-systems-group/), we show that currently deployed contact discovery services severly threaten users' privacy.
+In a research collaboration between [TU Darmstadt](https://encrypto.de), [TU Graz](https://www.iaik.tugraz.at/), and [University of Würzburg](https://se.informatik.uni-wuerzburg.de/secure-software-systems-group/secure-software-systems-group/), we show that currently deployed contact discovery services severely threaten users' privacy.
 
 ### Leaking Social Graphs via "Curious" or Compromised Service Providers
 
@@ -32,6 +32,11 @@ Our study of three popular mobile messengers (WhatsApp, Signal, and Telegram) sh
 We present interesting (cross-messenger) usage statistics, which also reveal that very few users change the default privacy settings (which in most cases are not privacy-friendly at all). Regarding mitigations, we propose novel techniques to significantly limit the feasibility of our crawling attacks, especially a new incremental contact discovery scheme that strictly improves over Signal's approach.
 
 Furthermore, we show that currently deployed hashing-based contact discovery protocols are severely broken by comparing three methods for efficient hash reversal of mobile phone numbers. For this, we also propose a significantly improved rainbow table construction for non-uniformly distributed inputs that is of independent interest. All our methods can reverse hashes of mobile phone numbers within milliseconds.
+
+### Responsible Disclosure
+
+We demonstrate methods that allow to invade the privacy of billions of mobile messenger users by using only very few resources. We therefore initiated the official responsible disclosure process with all messengers we investigated (WhatsApp, Signal, and Telegram) and shared our findings to prevent exploitation by maleficent imitators.
+As a result, WhatsApp has improved their protection mechanisms such that large-scale attacks can be detected, and Signal has reduced the number of possible queries to complicate crawling. Telegram responded to our responsible disclosure by elaborating on additional data scraping countermeasures beyond the rate limits detected by us. They are allegedly triggered when attackers use existing databases of active phone numbers and higher conversion rates than ours occur.
 
 ## Efficient Private Set Intersection (PSI) for Mobile Contact Discovery [KRSSW19]
 
