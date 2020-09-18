@@ -1,3 +1,7 @@
+## Attacks on WhatsApp, Signal, and Telegram in the News!
+
+See [**https://encrypto.de/news/contact-discovery**](https://encrypto.de/news/contact-discovery) for an up-to-date press review.
+
 ## What is Mobile Contact Discovery & Why Should I Care?
 
 Mobile contact discovery allows users of mobile messengers to conveniently connect with people in their address book: newly registered users can instantly start messaging existing contacts based on their phone numbers without exchanging additional information like usernames or email addresses.
