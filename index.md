@@ -1,3 +1,5 @@
+This website is also available [**in German**](https://contact-discovery.github.io/de/).
+
 ## Attacks on WhatsApp, Signal, and Telegram in the News!
 
 See [**https://encrypto.de/news/contact-discovery**](https://encrypto.de/news/contact-discovery) for an up-to-date press review.
