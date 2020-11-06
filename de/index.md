@@ -1,3 +1,5 @@
+Diese Website ist auch [**auf Englisch**](https://contact-discovery.github.io/) verfügbar.
+
 ## Angriffe auf WhatsApp, Signal und Telegram in den Schlagzeilen!
 
 Ein aktueller Pressespiegel befindet sich auf [**https://encrypto.de/news/contact-discovery**](https://encrypto.de/news/contact-discovery).
