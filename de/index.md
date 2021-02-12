@@ -1,6 +1,12 @@
 Diese Website ist auch [**auf Englisch**](https://contact-discovery.github.io/) verfügbar.
 
-## Angriffe auf WhatsApp, Signal und Telegram in den Schlagzeilen!
+## Aktuelles
+
+### Zweiter Platz beim Deutschen IT-Sicherheitspreis 2020
+
+[Christian Weinert](https://encrypto.de/weinert), [Thomas Schneider](https://encrypto.de/schneider), [Matthias Senker](https://www.encrypto.cs.tu-darmstadt.de/home_page/news_feed/news_details_166274.en.jsp), [Daniel Kales](https://daniel.kales.io/) und [Christian Rechberger](https://www.iaik.tugraz.at/person/christian-rechberger/) wurden mit dem zweiten Preis beim [8. Deutschen IT-Sicherheitspreis 2020](https://www.deutscher-it-sicherheitspreis.de/) für ihre Arbeit zu Privatsphäre-schützender Kontaktermittlung ausgezeichnet. Siehe [hier](https://www.encrypto.cs.tu-darmstadt.de/home_page/news_feed/news_details_222528.en.jsp) für Details.
+
+### Angriffe auf WhatsApp, Signal und Telegram in den Schlagzeilen
 
 Ein aktueller Pressespiegel befindet sich auf [**https://encrypto.de/news/contact-discovery**](https://encrypto.de/news/contact-discovery).
 
